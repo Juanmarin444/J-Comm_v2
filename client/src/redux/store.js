@@ -16,7 +16,7 @@ const store = configureStore({
       cartItems: cartFromLocalStorage
     }
   },
-  devTools: import.meta.env.NODE_ENV !== 'production',
+  devTools: import.meta.env.VITE_ENV !== 'production',
 });
 
 export default store;
